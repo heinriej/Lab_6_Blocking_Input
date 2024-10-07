@@ -10,7 +10,6 @@ public class CtoF_Converter
         boolean doneTemp = false;
         String trash = "";
 
-
         do
         {
             System.out.print("Enter your temperature in Celsius: ");
