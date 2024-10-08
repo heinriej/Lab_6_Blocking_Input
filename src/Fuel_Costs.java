@@ -8,6 +8,8 @@ public class Fuel_Costs
         double galsInTank = 0;
         double milesPerG = 0;
         double pricePerG = 0;
+        double hundredCost = 0;
+        double howFar = 0;
         String trash = "";
         boolean doneGal = false;
         boolean doneSec1 = false;
@@ -63,7 +65,12 @@ public class Fuel_Costs
                     System.out.println("You entered " + trash + " try again!");
                 }
             }while (!doneSec3);
-            
+
+            hundredCost = pricePerG * 100;
+            howFar = galsInTank * milesPerG;
+            System.out.println("The cost to drive 100 miles is " + hundredCost + " dollars.");
+            System.out.println("How far you can go with a full tank of gas is " + howFar + " miles.");
+            doneGal = true;
 
         }while(!doneGal);
     }
